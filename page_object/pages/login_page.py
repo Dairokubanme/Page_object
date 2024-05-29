@@ -26,3 +26,4 @@ class LoginPage(BasePage):
 
     def basket_is_empty(self):
         assert self.is_element_present(*ProductPageLocators.basket_is_empty), "Basket not empty"
+

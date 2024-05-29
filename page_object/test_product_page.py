@@ -33,7 +33,6 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page.check_basket()
     page.success_message_should_disappear()
 
-@pytest.mark.new
 def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     page = MainPage(browser, link)
